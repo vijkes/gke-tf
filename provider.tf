@@ -1,6 +1,6 @@
 provider "google" {
     credentials = file("/home/hpuser/.config/gcloud/application_default_credentials.json")
-    project = "devops-cicd-430308 "
+    project = "devops-cicd-430308"
     region = "us-west4"
   
 }

@@ -1,5 +1,5 @@
 provider "google" {
-    project = "devops-cicd"
+    project = "devops-cicd-430308 "
     region = "us-west4"
   
 }

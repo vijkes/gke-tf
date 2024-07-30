@@ -1,7 +1,7 @@
 resource "google_compute_router_nat" "nat" {
     name = "gke-nat"
     router = google_compute_router.router.name
-    region = "us-east4"
+    region = "us-west4"
     source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
     nat_ip_allocate_option = "MANUAL_ONLY"
 

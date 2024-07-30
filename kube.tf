@@ -1,6 +1,6 @@
 resource "google_container_cluster" "primary" {
     name = "primary"
-    location = "us-east4-a"
+    location = "us-west4-a"
     remove_default_node_pool = true
     initial_node_count = 1
     network = google_compute_network.vpc_network.self_link
@@ -11,7 +11,7 @@ resource "google_container_cluster" "primary" {
     
 
     node_locations = [
-        "us-east4-b"
+        "us-west4-b"
     ]
 
     addons_config{

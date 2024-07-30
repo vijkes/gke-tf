@@ -28,7 +28,7 @@ resource "google_container_cluster" "primary" {
     }
 
     workload_identity_config {
-        workload_pool   =   "devops-cicd.svc.id.goog"
+        workload_pool   =   "devops-cicd-430308.svc.id.goog"
     }
 
     ip_allocation_policy {

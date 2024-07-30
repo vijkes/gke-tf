@@ -1,6 +1,6 @@
 provider "google" {
     project = "devops-cicd"
-    region = "us-east4"
+    region = "us-west4"
   
 }
 

@@ -33,7 +33,7 @@ resource "google_container_cluster" "primary" {
 
     ip_allocation_policy {
         cluster_secondary_range_name    = "k8s-pod-range"
-        services_secondary_range_name   = "k8s-service-range"
+        services_secondary_range_name   = "k8s-svc-range"
     }
 
     private_cluster_config {

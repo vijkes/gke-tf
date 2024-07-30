@@ -1,7 +1,7 @@
 resource "google_compute_subnetwork" "private-subnet" {
     name= "gke-subnet-pri"
     ip_cidr_range = "10.0.0.0/18"
-    region = "us-east4"
+    region = "us-west4"
     network = google_compute_network.vpc_network.id
     private_ip_google_access = true
 

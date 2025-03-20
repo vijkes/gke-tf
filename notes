@@ -1,0 +1,47 @@
+NACL: firewall at subnet level, stateless, need to mention inbound as well as outbound
+Sgrp: firewall at instance level, statfull, only meniton inbound, it will manage outbound
+
+AWS SSL,ACM: data in transit
+AWS KMS: data at rest
+
+
+Docker n/w:
+. bridge: containers communicate on the same host n/w using container name, isolated from ext n/w
+. host: container can be accessed direct via host port, faster performance, but lack isolation
+. none: no n/w, entirely isolated
+. overlay: used in swarm for multi-host n/w
+. macvlan: assign mac address to container, usefule if container to be treated like physical machine 
+
+
+
+🔸1. ALB ---Layer: 7 (Application Layer)---HTTP/HTTPS traffic
+Features:
+Path-based routing (e.g., /api/*)
+Host-based routing (e.g., api.example.com)
+Supports WebSockets
+Native integration with containers (ECS)
+URL rewrites and redirects
+Use Case: Microservices, web apps, containers
+
+🔸 2. NLB---Layer: 4 (Transport Layer)--- TCP, UDP, TLS traffic
+Features:
+Extremely fast and scalable
+Handles millions of requests per second
+Supports static IP & Elastic IP
+TLS termination support
+Use Case: High-performance, low-latency apps, gaming servers, VoIP
+🔸 3. GWLB---Layer: Transparent Network Gateway
+Best For: Deploying and scaling third-party virtual appliances (e.g., firewalls, IDS/IPS)
+Features:
+IP packet-level inspection
+Works with appliance vendors (e.g., Palo Alto, Fortinet)
+Centralized appliance deployment
+Use Case: Security, traffic inspection, middleboxes
+🔸 4. Classic Load Balancer (CLB) (Legacy)
+Layer: Both 4 (TCP) and 7 (HTTP/HTTPS)
+Best For: Older applications (pre-ALB era)
+Supports sticky sessions
+Features:
+Simple LB, fewer features
+Deprecated in favor of ALB/NLB
+Use Case: Legacy systems still in use

@@ -45,3 +45,23 @@ Features:
 Simple LB, fewer features
 Deprecated in favor of ALB/NLB
 Use Case: Legacy systems still in use
+
+
+---------------------------------------------------------------------------------------------
+
+Routing policies in AWS R53:
+1. Simple routing policy.
+    ip to record
+2. Weighted routing policy
+   like Canary deployment
+   70%--serverA
+   30%---serverB
+3. Latency routing
+   routes users to lowest latency
+4. Failover routing policy
+   primary--active-server.com
+   second-- bkp-server.com
+5. Geo-location routing
+   ensure traffic goes region-specific resources
+   Ind users--in.exaple.com
+   US--us.example.com

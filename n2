@@ -1,0 +1,48 @@
+Terraform 
+wrapper
+teragrunt
+
+k8s
+how to monitor metric of an app
+different types of kinds
+
+docker 
+network types
+best practices of docker file
+shoud I use root or non-root user
+
+AWS 
+differet types of lb
+diff b/w app and n/w lb
+top security tools
+s3 bucket
+auto-scaling policies
+regional: EC2, Lightsail, EBS, RDS, DynamoDB, SNS, SQS, Transcribe, VPC, KMS
+global: R53, IAM, Cost & billing, S3, cft, Direct connect, WAF
+
+
+ansible
+best strategey
+how does it work in backend
+
+
+search filee in Linux
+find /path/to/serach --name filename -type f -size +100M -m time -7
+
+elk
+bg depoy:
+Blue-Green Deployment is a powerful strategy that allows for seamless updates with minimal risk. By using two identical environments, you can test and validate new versions of your application before making them live, providing a smooth user experience and quick rollback options if needed.
+
+
+git work flow
+
+resolve git merge conflicts
+git merge --abort   
+cancel everything and will bring to you original place
+
+Accept current change | Accept incoming change | accept both changes | compare changes
+we will save the changes we are happy with
+
+
+
+vpc peering
